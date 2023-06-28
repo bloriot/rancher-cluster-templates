@@ -24,9 +24,6 @@ spec:
       workerRole: false
       quantity: 3
       name: {{ $clustername }}-controlplane
-      machineDeploymentAnnotations:
-        cluster.provisioning.cattle.io/autoscaler-min-size: "1"
-        cluster.provisioning.cattle.io/autoscaler-max-size: "3"
       machineConfigRef:
         kind: Amazonec2Config
         name: {{ $clustername }}-controlplane
@@ -37,6 +34,9 @@ spec:
       workerRole: true
       quantity: 2
       name: {{ $clustername }}-worker
+      machineDeploymentAnnotations:
+        cluster.provisioning.cattle.io/autoscaler-min-size: "1"
+        cluster.provisioning.cattle.io/autoscaler-max-size: "4"
       machineConfigRef:
         kind: Amazonec2Config
         name: {{ $clustername }}-worker
