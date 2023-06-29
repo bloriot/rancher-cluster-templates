@@ -25,3 +25,8 @@ questions:
   label: "Subnet ID"
   type: string
   group: "General"
+- variable: kubernetesVersion
+  kubernetesVersion: "Kubernetes version to provision"
+  label: "Kubernetes Version"
+  type: string
+  group: "General"
