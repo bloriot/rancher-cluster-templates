@@ -1,3 +1,4 @@
 defaultNamespace: fleet-local
+namespace: fleet-local
 helm:
   chart: "" 
