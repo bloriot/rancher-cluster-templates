@@ -3,7 +3,7 @@ apiVersion: rke-machine-config.cattle.io/v1
 kind: Amazonec2Config
 metadata:
   name: {{ $clustername }}-controlplane
-  namespace: fleet-default
+  namespace: fleet-local
 instanceType: t3a.medium
 region: {{ .Values.region | quote }}
 subnetId: {{ .Values.subnetId | quote }}

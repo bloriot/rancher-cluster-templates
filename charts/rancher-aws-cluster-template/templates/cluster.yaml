@@ -11,12 +11,12 @@ metadata:
 {{ toYaml .Values.cluster.annotations | indent 4 }}
   {{- end }}
   name: {{ $clustername }}
-  namespace: fleet-default
+  namespace: fleet-local
 spec:
   {{- if .Values.cloudCredentialSecretName }}
   cloudCredentialSecretName: {{ .Values.cloudCredentialSecretName }}
   {{- end }}
-  kubernetesVersion: v1.24.13+rke2r1
+  kubernetesVersion: {{ .Values.kubernetesVersion }}
   rkeConfig:
     machinePools:
     - controlPlaneRole: true
