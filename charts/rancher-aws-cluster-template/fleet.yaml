@@ -1,3 +1,2 @@
-defaultNamespace: fleet-local
 helm:
   chart: "" 
