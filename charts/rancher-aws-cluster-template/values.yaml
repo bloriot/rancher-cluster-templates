@@ -10,7 +10,7 @@ cluster:
   annotations: {}
 
 # specify cloud credential secret name, do not need to be provided if using custom driver
-cloudCredentialSecretName: "bloriot-aws"
+cloudCredentialSecretName: "cc-kpg82"
 region: "eu-west-3"
 subnetId: "subnet-bc6c75d5"
 vpcId: "vpc-7456a51c"
