@@ -5,4 +5,4 @@ helm:
     region: "eu-west-3"
     subnetId: "subnet-bc6c75d5"
     vpcId: "vpc-7456a51c"
-    kubernetesVersion: "v1.28.8+rke2r1"
+    kubernetesVersion: "v1.27.13+rke2r1"
