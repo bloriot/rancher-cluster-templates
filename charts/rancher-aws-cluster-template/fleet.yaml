@@ -6,3 +6,6 @@ helm:
     subnetId: "subnet-bc6c75d5"
     vpcId: "vpc-7456a51c"
     kubernetesVersion: "v1.31.5+rke2r1"
+    cluster:
+      labels:
+        cluster-type: demo
